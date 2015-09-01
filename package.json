@@ -1,0 +1,30 @@
+{
+  "name": "backbone-todo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify src/app.js > bundle.js"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "backbone": "^1.2.2",
+    "backbone.localstorage": "^1.1.16",
+    "bootstrap": "^3.3.5",
+    "jquery": "^2.1.4",
+    "lodash": "^3.10.1",
+    "todomvc-common": "^0.3.1",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "babelify": "file:../eomobile-binder/eomobile-frontend/node_modules/babelify",
+    "browserify": "file:../eomobile-binder/eomobile-frontend/node_modules/browserify"
+  }
+}
